@@ -176,7 +176,7 @@ The following Modules are called:
 
 Source: Azure/avm-res-network-bastionhost/azurerm
 
-Version: 0.7.2
+Version: 0.6.0
 
 ### <a name="module_bastion_public_ip"></a> [bastion\_public\_ip](#module\_bastion\_public\_ip)
 
@@ -212,7 +212,7 @@ Version: 0.3.3
 
 Source: Azure/avm-ptn-network-private-link-private-dns-zones/azurerm
 
-Version: 0.10.1
+Version: 0.11.0
 
 ### <a name="module_virtual_network_gateway"></a> [virtual\_network\_gateway](#module\_virtual\_network\_gateway)
 

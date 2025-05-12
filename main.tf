@@ -64,7 +64,7 @@ module "dns_resolver" {
 
 module "private_dns_zones" {
   source   = "Azure/avm-ptn-network-private-link-private-dns-zones/azurerm"
-  version  = "0.10.1"
+  version  = "0.11.0"
   for_each = local.private_dns_zones
 
   location                                = each.value.location
@@ -137,7 +137,7 @@ module "bastion_public_ip" {
 
 module "bastion_host" {
   source   = "Azure/avm-res-network-bastionhost/azurerm"
-  version  = "0.7.2"
+  version  = "0.6.0"
   for_each = local.bastion_hosts
 
   location               = each.value.location
