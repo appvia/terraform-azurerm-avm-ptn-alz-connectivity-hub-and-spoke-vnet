@@ -9,11 +9,12 @@ module "hub_and_spoke_vnet" {
 
 module "virtual_network_gateway" {
   source   = "Azure/avm-ptn-vnetgateway/azurerm"
-  version  = "0.8.0"
+  version  = "0.9.0"
   for_each = local.virtual_network_gateways
 
   location                                  = each.value.virtual_network_gateway.location
   name                                      = each.value.virtual_network_gateway.name
+  parent_id                                 = each.value.virtual_network_gateway.parent_id
   edge_zone                                 = try(each.value.virtual_network_gateway.edge_zone, null)
   enable_telemetry                          = var.enable_telemetry
   express_route_circuits                    = try(each.value.virtual_network_gateway.express_route_circuits, null)
