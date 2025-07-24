@@ -9,7 +9,7 @@ module "hub_and_spoke_vnet" {
 
 module "virtual_network_gateway" {
   source   = "Azure/avm-ptn-vnetgateway/azurerm"
-  version  = "0.9.0"
+  version  = "0.10.2"
   for_each = local.virtual_network_gateways
 
   location                                  = each.value.virtual_network_gateway.location

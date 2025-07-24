@@ -224,7 +224,7 @@ Version: 0.15.0
 
 Source: Azure/avm-ptn-vnetgateway/azurerm
 
-Version: 0.9.0
+Version: 0.10.2
 
 <!-- markdownlint-disable-next-line MD041 -->
 ## Data Collection
